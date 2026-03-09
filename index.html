@@ -39,14 +39,14 @@
 
 body{
 margin:0;
+font-family:Arial, sans-serif;
 background:#000;
 color:#fff;
-font-family:Arial, sans-serif;
 text-align:center;
 }
 
 .container{
-max-width:720px;
+max-width:700px;
 margin:auto;
 padding:20px;
 }
@@ -63,7 +63,7 @@ border-radius:10px;
 display:block;
 }
 
-.play{
+.play-button{
 position:absolute;
 top:50%;
 left:50%;
@@ -73,32 +73,28 @@ color:white;
 pointer-events:none;
 }
 
-.button{
-display:block;
+.cta{
 margin-top:20px;
-padding:15px;
 background:#ff0000;
-color:white;
-text-decoration:none;
+padding:15px;
+border-radius:8px;
 font-size:20px;
 font-weight:bold;
-border-radius:10px;
 }
 
-.button2{
+.popup-btn{
 display:block;
 margin-top:15px;
-padding:15px;
-background:#003cff;
-color:white;
-text-decoration:none;
-font-size:18px;
+padding:14px;
 font-weight:bold;
 border-radius:10px;
+text-decoration:none;
+color:#fff;
+background:#0400ff;
+cursor:pointer;
 }
 
-.button:hover,
-.button2:hover{
+.popup-btn:hover{
 opacity:0.9;
 }
 
@@ -110,6 +106,19 @@ opacity:0.9;
 
 <div class="container">
 
+<!-- Banner Adsterra -->
+<script>
+atOptions = {
+'key' : '4e9bccda8be457bccf82fabadf33d690',
+'format' : 'iframe',
+'height' : 50,
+'width' : 320,
+'params' : {}
+};
+</script>
+
+<script src="https://achelessvase.com/4e9bccda8be457bccf82fabadf33d690/invoke.js"></script>
+
 <h1>🔥 Trending Video</h1>
 
 <p>Too Thick To Handle 😮‍💨😫</p>
@@ -117,43 +126,76 @@ opacity:0.9;
 <!-- Fake Video -->
 
 <div class="video-box" onclick="goAd()">
-<img src="https://megadonald.github.io/bkl-zx/bkz12.jpg" class="thumb" alt="Trending video thumbnail">
-<div class="play">▶</div>
+
+<img src="https://megadonald.github.io/bkl-zx/bkz12.jpg" class="thumb">
+
+<div class="play-button">▶</div>
+
 </div>
 
-<a href="javascript:void(0)" class="button" onclick="goAd()">
+<!-- Button -->
+
+<a href="javascript:void(0)" class="popup-btn" onclick="goAd()">
 ▶ Watch Full Video
 </a>
 
-<a href="javascript:void(0)" class="button2" onclick="moreVideos()">
+<a href="javascript:void(0)" class="popup-btn" onclick="moreVideos()">
 ▶ More Videos
 </a>
 
 </div>
 
-<script defer>
+<!-- Banner Bawah -->
 
-const ad1="https://achelessvase.com/bpyh2n3u1?key=365cd9a5147798a9f666011d6cbcd8f0";
-const ad2="https://achelessvase.com/r1re97eqv?key=d8ec3d73486c6f4a48a4ad776e715b6e";
+<script async data-cfasync="false" src="https://achelessvase.com/b0b915e4106768d04f15b686c50c4b7e/invoke.js"></script>
+
+<div id="container-b0b915e4106768d04f15b686c50c4b7e"></div>
+
+<script>
+
+const adLink1="https://achelessvase.com/bpyh2n3u1?key=365cd9a5147798a9f666011d6cbcd8f0";
+const adLink2="https://achelessvase.com/f9hhubydk?key=b50f66e969f66dabeb91f9dc553c10cf";
+
+let clicked=false;
 
 function goAd(){
-window.open(ad1,"_blank");
+window.open(adLink1,"_blank");
 }
 
 function moreVideos(){
-window.open(ad2,"_blank");
+window.open(adLink2,"_blank");
 }
-
-let clicked=false;
 
 document.body.addEventListener("click",function(){
 if(!clicked){
 clicked=true;
-window.open(ad2,"_blank");
+window.open(adLink2,"_blank");
 }
-},{once:true});
+});
 
 </script>
+
+<!-- Histats -->
+
+<script>
+var _Hasync=_Hasync||[];
+_Hasync.push(['Histats.start','1,4716773,4,9,110,60,00010000']);
+_Hasync.push(['Histats.fasi','1']);
+_Hasync.push(['Histats.track_hits','']);
+(function(){
+var hs=document.createElement('script');
+hs.type='text/javascript';
+hs.async=true;
+hs.src='//s10.histats.com/js15_as.js';
+(document.head||document.body).appendChild(hs);
+})();
+</script>
+
+<noscript>
+<a href="/" target="_blank">
+<img src="//sstatic1.histats.com/0.gif?4716773&101" alt="">
+</a>
+</noscript>
 
 </body>
 </html>
